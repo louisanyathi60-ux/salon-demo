@@ -8,11 +8,13 @@
 <style>
 body {
   margin: 0;
+  background: #fff;
 }
 
 .container {
   position: relative;
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .container img {
@@ -20,14 +22,14 @@ body {
   display: block;
 }
 
-/* clickable areas */
-.btn {
+/* OPTIONAL: clickable button area */
+.book-btn {
   position: absolute;
   top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 220px;
-  height: 50px;
+  height: 55px;
   cursor: pointer;
 }
 </style>
@@ -36,12 +38,12 @@ body {
 <body>
 
 <div class="container">
-  <!-- YOUR EXACT DESIGN IMAGE -->
-  <img src="your-design.png" alt="Salon Website">
+  <!-- ✅ THIS IMAGE WILL ALWAYS LOAD -->
+  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Salon Website">
 
-  <!-- clickable button -->
+  <!-- Optional clickable area -->
   <a href="#">
-    <div class="btn"></div>
+    <div class="book-btn"></div>
   </a>
 </div>
 
