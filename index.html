@@ -5,47 +5,166 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Glamour Salon</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
 <style>
 body {
   margin: 0;
-  background: #fff;
+  font-family: 'Poppins', sans-serif;
+  background: #f8dede;
 }
 
-.container {
-  position: relative;
-  max-width: 1200px;
-  margin: auto;
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #fff0f3;
 }
 
-.container img {
+nav h1 {
+  font-family: 'Playfair Display', serif;
+  color: #c48b8b;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #5a3e36;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200') center/cover;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: pink;
+  border: none;
+  border-radius: 25px;
+}
+
+/* SERVICES */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card img {
   width: 100%;
-  display: block;
+  border-radius: 10px;
 }
 
-/* OPTIONAL: clickable button area */
-.book-btn {
-  position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 220px;
-  height: 55px;
-  cursor: pointer;
+/* GALLERY */
+.gallery {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery img {
+  width: 22%;
+  margin: 1%;
+  border-radius: 10px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+input, textarea {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-  <!-- ✅ THIS IMAGE WILL ALWAYS LOAD -->
-  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Salon Website">
+<nav>
+  <h1>Glamour Salon</h1>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
 
-  <!-- Optional clickable area -->
-  <a href="#">
-    <div class="book-btn"></div>
-  </a>
-</div>
+<section class="hero">
+  <h2>Beauty & Style</h2>
+  <p>Where Glamour Meets Luxury</p>
+  <button class="btn">Book Appointment</button>
+</section>
+
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796">
+      <h3>Hair Styling</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
+      <h3>Nail Art</h3>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df">
+      <h3>Makeup</h3>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Gallery</h2>
+  <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796">
+  <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
+  <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df">
+  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <input type="text" placeholder="Your Name"><br>
+  <input type="email" placeholder="Your Email"><br>
+  <textarea placeholder="Message"></textarea><br>
+  <button class="btn">Send</button>
+</section>
+
+<footer>
+  © 2026 Glamour Salon
+</footer>
 
 </body>
-</html>
+  </html>
