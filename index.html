@@ -1,78 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blush & Bloom Studio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glamour Salon</title>
+
+<style>
+body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container img {
+  width: 100%;
+  display: block;
+}
+
+/* clickable areas */
+.btn {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+}
+</style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="logo">Blush & Bloom Studio</div>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+<div class="container">
+  <!-- YOUR EXACT DESIGN IMAGE -->
+  <img src="your-design.png" alt="Salon Website">
 
-<!-- Hero Section -->
-<header class="hero">
-  <h1>Where Soft Elegance Meets Trendy Style</h1>
-  <p>Luxury hair, nails, and beauty services tailored just for you.</p>
-  <a href="services.html" class="btn">Explore Our Services</a>
-</header>
-
-<!-- About Section -->
-<section class="about">
-  <h2>Welcome to Blush & Bloom Studio</h2>
-  <p>We provide premium beauty services in a relaxing, modern environment. Our stylists are passionate about making you look and feel your best.</p>
-</section>
-
-<!-- Featured Gallery -->
-<section class="preview">
-  <h2>Our Work</h2>
-  <div class="gallery">
-    <img src="images/hair1.jpg" alt="Hair Style 1">
-    <img src="images/hair2.jpg" alt="Hair Style 2">
-    <img src="images/nails1.jpg" alt="Nails 1">
-    <img src="images/nails2.jpg" alt="Nails 2">
-  </div>
-</section>
-
-<!-- Client Base / Stats Section -->
-<section class="stats">
-  <h2>Our Client Base</h2>
-  <div class="stat-bar">
-    <span>Hair Styling</span>
-    <div class="bar">
-      <div class="fill" style="width: 85%"></div>
-    </div>
-  </div>
-  <div class="stat-bar">
-    <span>Nail Services</span>
-    <div class="bar">
-      <div class="fill" style="width: 75%"></div>
-    </div>
-  </div>
-  <div class="stat-bar">
-    <span>Makeup & Beauty</span>
-    <div class="bar">
-      <div class="fill" style="width: 65%"></div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2026 Blush & Bloom Studio. All rights reserved.</p>
-  <div class="socials">
-    <a href="https://www.facebook.com/profile.php?id=61587602161378" target="_blank">Facebook</a> |
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-  </div>
-</footer>
+  <!-- clickable button -->
+  <a href="#">
+    <div class="btn"></div>
+  </a>
+</div>
 
 </body>
-                                             </html>
+</html>
