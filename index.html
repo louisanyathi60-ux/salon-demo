@@ -1,36 +1,274 @@
-<section class="services">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h2 class="title">Our Services</h2>
-  <p style="text-align:center;">What We Offer</p>
+<title>Glamour Beauty Salon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #f9e1e7, #f4cfd6);
+  color: #5a3e36;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Great Vibes';
+  font-size: 38px;
+  color: #c47a89;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #5a3e36;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-family: 'Great Vibes';
+  font-size: 56px;
+  color: #b76e79;
+  margin: 0;
+}
+
+.hero-text p {
+  font-family: 'Playfair Display';
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.hero img {
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(45deg, #e89aa9, #b76e79);
+  border: none;
+  padding: 14px 28px;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* DIVIDER */
+.divider {
+  width: 80%;
+  height: 1px;
+  background: #e3aeb7;
+  margin: 40px auto;
+}
+
+/* SERVICES */
+.services {
+  text-align: center;
+}
+
+.services h2 {
+  font-family: 'Great Vibes';
+  font-size: 36px;
+}
+
+.service-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 140px;
+}
+
+.service img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.service p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px 8%;
+}
+
+.box {
+  background: rgba(255,255,255,0.85);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* FORM */
+input, textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* ABOUT IMAGE */
+.about-img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Glamour</div>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Glamour Beauty Salon</h1>
+    <p>Where Beauty Meets Luxury</p>
+    <button class="btn">Book Appointment</button>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800">
+</section>
+
+<div class="divider"></div>
+
+<section class="services">
+  <h2>Our Services</h2>
+  <p>What We Offer</p>
 
   <div class="service-row">
-
-    <!-- HAIR -->
     <div class="service">
-      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=400">
+      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e">
       <p>Hair Styling</p>
     </div>
 
-    <!-- MAKEUP -->
     <div class="service">
-      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=400">
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796">
       <p>Makeup</p>
     </div>
 
-    <!-- NAILS -->
     <div class="service">
-      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=400">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
       <p>Nails</p>
     </div>
 
-    <!-- LASHES -->
     <div class="service">
-      <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?q=80&w=400">
+      <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223">
       <p>Lashes & Brows</p>
     </div>
-
   </div>
 
   <button class="btn">View All Services</button>
+</section>
+
+<div class="divider"></div>
+
+<section class="grid">
+
+  <div class="box">
+    <h2 style="font-family:'Great Vibes'">Get in Touch</h2>
+
+    <input placeholder="Your Name">
+    <input placeholder="Your Email">
+    <input placeholder="Your Phone">
+    <textarea placeholder="Your Message"></textarea>
+
+    <button class="btn">Send Message</button>
+  </div>
+
+  <div class="box">
+    <h2 style="font-family:'Great Vibes'">About Us</h2>
+
+    <img class="about-img" src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+
+    <p>
+      Experience the Glamour Difference. At Glamour Beauty Salon, we bring your beauty dreams to life with expert care and luxury.
+    </p>
+
+    <h3>Why Choose Us</h3>
+    <p>✔ Professional specialists</p>
+    <p>✔ Premium products</p>
+    <p>✔ Affordable luxury</p>
+  </div>
 
 </section>
+
+<footer>
+  © 2026 Glamour Beauty Salon. All rights reserved.
+</footer>
+
+</body>
+  </html>
