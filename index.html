@@ -3,141 +3,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glamour Beauty Salon</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<title>Glamour Salon</title>
 
 <style>
 
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f7d9df;
-  color: #5a3e36;
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),
+  url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1400') center/cover fixed;
+  color:#5a3e36;
 }
 
 /* NAV */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 10%;
-  align-items: center;
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 8%;
+  align-items:center;
 }
 
-.logo {
-  font-family: 'Great Vibes', cursive;
-  font-size: 32px;
-  color: #c47a89;
+.logo{
+  font-family:'Great Vibes';
+  font-size:36px;
+  color:#b76e79;
 }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #5a3e36;
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#5a3e36;
 }
 
 /* HERO */
-.hero {
-  display: flex;
-  align-items: center;
-  padding: 50px 10%;
-  background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
-              url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1400') center/cover;
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:60px 8%;
 }
 
-.hero-text {
-  max-width: 500px;
+.hero-text{
+  max-width:500px;
 }
 
-.hero-text h1 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 50px;
-  color: #b76e79;
+.hero-text h1{
+  font-family:'Great Vibes';
+  font-size:48px;
+  color:#b76e79;
 }
 
-.hero-text p {
-  margin: 10px 0;
+.hero-text p{
+  font-family:'Playfair Display';
 }
 
-.btn {
-  background: linear-gradient(45deg,#d98c9c,#b76e79);
-  border: none;
-  padding: 12px 25px;
-  color: white;
-  border-radius: 25px;
-  margin-top: 15px;
+.btn{
+  background:linear-gradient(45deg,#d98c9c,#b76e79);
+  border:none;
+  padding:12px 25px;
+  border-radius:25px;
+  color:#fff;
+  margin-top:15px;
 }
 
-/* SECTION TITLES */
-.title {
-  font-family: 'Great Vibes', cursive;
-  font-size: 32px;
-  text-align: center;
-  margin-top: 40px;
+/* DIVIDER */
+.divider{
+  width:80%;
+  margin:30px auto;
+  height:1px;
+  background:#d8a5ad;
 }
 
 /* SERVICES */
-.services {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 10%;
+.services{
+  text-align:center;
+  padding:30px 8%;
 }
 
-.service-left {
-  flex: 1;
+.services h2{
+  font-family:'Great Vibes';
+  font-size:32px;
 }
 
-.icons {
-  display: flex;
-  gap: 20px;
-  margin: 20px 0;
+.icons{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:20px;
 }
 
-.icons div {
-  text-align: center;
+.icons div{
+  text-align:center;
 }
 
-.icons img {
-  width: 50px;
+.icons img{
+  width:55px;
 }
 
-.service-right img {
-  width: 100%;
-  border-radius: 15px;
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  padding:40px 8%;
 }
 
-/* CONTACT + ABOUT */
-.bottom {
-  display: flex;
-  gap: 40px;
-  padding: 40px 10%;
+/* CARD BOX */
+.box{
+  background:rgba(255,255,255,0.85);
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
 }
 
-.box {
-  flex: 1;
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
+.box h2{
+  font-family:'Great Vibes';
 }
 
-input, textarea {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
+input, textarea{
+  width:100%;
+  margin:10px 0;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ddd;
 }
 
 /* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+footer{
+  text-align:center;
+  padding:20px;
+  font-size:14px;
 }
 
 @media(max-width:768px){
-  .hero, .services, .bottom {
-    flex-direction: column;
+  .grid{
+    grid-template-columns:1fr;
+  }
+  .icons{
+    flex-wrap:wrap;
   }
 }
 
@@ -146,7 +152,6 @@ footer {
 
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="logo">Glamour</div>
   <div>
@@ -157,7 +162,6 @@ footer {
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-text">
     <h1>Welcome to Glamour Beauty Salon</h1>
@@ -166,79 +170,60 @@ footer {
   </div>
 </section>
 
-<!-- SERVICES -->
+<div class="divider"></div>
+
 <section class="services">
+  <h2>Our Services</h2>
+  <p>What We Offer</p>
 
-  <div class="service-left">
-    <h2 class="title">Our Services</h2>
-    <p style="text-align:center;">What We Offer</p>
-
-    <div class="icons">
-
-      <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006555.png">
-        <p>Hair Styling</p>
-      </div>
-
-      <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png">
-        <p>Makeup</p>
-      </div>
-
-      <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/3534/3534033.png">
-        <p>Nails</p>
-      </div>
-
-      <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png">
-        <p>Lashes & Brows</p>
-      </div>
-
+  <div class="icons">
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/1006/1006555.png">
+      <p>Hair Styling</p>
     </div>
-
-    <button class="btn">View All Services</button>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/3468/3468377.png">
+      <p>Makeup</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/3534/3534033.png">
+      <p>Nails</p>
+    </div>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png">
+      <p>Lashes</p>
+    </div>
   </div>
-
-  <div class="service-right">
-    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800">
-  </div>
-
 </section>
 
-<!-- BOTTOM -->
-<section class="bottom">
+<div class="divider"></div>
 
-  <!-- FORM -->
+<section class="grid">
+
   <div class="box">
-    <h2 class="title">Get in Touch</h2>
-
-    <input type="text" placeholder="Your Name">
-    <input type="email" placeholder="Your Email">
-    <input type="text" placeholder="Your Phone">
+    <h2>Get in Touch</h2>
+    <input placeholder="Your Name">
+    <input placeholder="Your Email">
+    <input placeholder="Your Phone">
     <textarea placeholder="Your Message"></textarea>
-
     <button class="btn">Send Message</button>
   </div>
 
-  <!-- ABOUT -->
   <div class="box">
-    <h2 class="title">About Us</h2>
-    <p>
-      Experience the Glamour Difference. At Glamour Beauty Salon, we bring your beauty dreams to life with expert care and luxury.
-    </p>
+    <h2>About Us</h2>
+    <p>Experience the Glamour Difference. We bring your beauty dreams to life with expert care and luxury.</p>
 
     <h3>Why Choose Us</h3>
-    <p>✔ Professional & certified beauty specialists</p>
-    <p>✔ Premium, skin-safe products</p>
-    <p>✔ Affordable luxury experience</p>
+    <p>✔ Professional specialists</p>
+    <p>✔ Premium products</p>
+    <p>✔ Affordable luxury</p>
   </div>
 
 </section>
 
 <footer>
-  © 2026 Glamour Beauty Salon. All rights reserved.
+  © 2026 Glamour Beauty Salon
 </footer>
 
 </body>
-</html>
+      </html>
